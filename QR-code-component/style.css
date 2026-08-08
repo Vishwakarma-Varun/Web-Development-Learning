@@ -1,0 +1,57 @@
+body{
+    background-color:  hsl(212, 45%, 89%);
+}
+
+.box {
+    width: 310px;
+    height: 480px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 100px;
+    margin-left: 450px;
+    padding-top: 1px;
+}
+
+.qr{
+    margin-top: 15px;
+    margin-left: 15px;
+    width: 280px;
+    height: 280px;
+    background-image: url(images/image-qr-code.png);
+    background-size: cover;
+    border-radius: 14px;
+}
+.qr-text{
+    margin-top: 15px;
+    margin-left: 45px;
+
+}
+.text{
+    font-size: 20px;
+    color: hsl(218, 44%, 22%);
+    font-family: "Outfit", sans-serif;
+    font-weight: 700;
+}
+
+.sline{
+    margin-left: -7px;
+}
+
+.small{
+    margin-top: 15px;
+    font-size: 14px;
+    font-family: "Outfit", sans-serif;
+    color: hsl(216, 15%, 48%);
+
+}
+
+.line{
+    margin-bottom: 6px;
+}
+.s-sline{
+    margin: -5px;
+    margin-bottom: 3px;
+}
+.s-tline{
+    margin-left: 68px;
+}
