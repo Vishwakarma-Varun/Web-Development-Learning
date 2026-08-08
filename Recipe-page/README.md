@@ -4,9 +4,8 @@ This is my solution to the **Recipe Page Challenge** from Frontend Mentor. The g
 
 ## 🔗 Links
 
-- **Live Site:** https://vishwakarma-varun.github.io/recipe-page/
+- **Live Site:** https://vishwakarma-varun.github.io/Web-Development-Learning/Recipe-page/
 - **Repository:** https://github.com/Vishwakarma-Varun/recipe-page
-- **Frontend Mentor Solution:** YOUR_FRONTEND_MENTOR_SOLUTION_LINK
 
 ---
 
