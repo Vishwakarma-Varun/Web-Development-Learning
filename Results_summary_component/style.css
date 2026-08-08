@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(221, 100%, 96%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+.card {
+  display: flex;
+  max-width: 570px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1.5rem;
+}
+.card1 {
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+  padding: 2rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  width: 100%;
+}
+
+.top-line {
+  margin-bottom: 1.7rem;
+  color: hsla(241, 100%, 89%, 0.644);
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.outer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.circle {
+  width: 9.5rem;
+  height: 9.5rem;
+  font-weight: 700;
+  color: white;
+  border-radius: 50%;
+  background: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+  margin-bottom: 1rem;
+}
+
+.score {
+  font-size: 3.8rem;
+  margin-top: 2.8rem;
+  line-height: 3.8rem;
+}
+
+.outof {
+  color: hsla(241, 100%, 89%, 0.644);
+  font-size: 1rem;
+}
+
+h1 {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+p {
+  color: hsla(241, 100%, 89%, 0.644);
+  font-weight: 500;
+  margin-top: 1rem;
+}
+
+.sum {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: hsl(224, 30%, 27%);
+}
+
+.card2 {
+  padding: 2rem;
+  width: 100%;
+}
+
+.bar {
+  width: 100%;
+  border-radius: 0.8rem;
+  padding: 0.7rem;
+  margin-top: 0.9rem;
+}
+
+span {
+  font-size: 0.92rem;
+}
+
+.icon {
+  width: 1rem;
+  vertical-align: middle;
+}
+
+#reaction {
+  color: rgba(255, 0, 0, 0.63);
+  font-weight: 500;
+  margin-left: 0.3rem;
+  vertical-align: middle;
+}
+
+.second-part {
+  margin-left: 2.87rem;
+  color: hsl(224, 30%, 27%);
+  font-weight: 400;
+}
+
+.hundread {
+  display: inline-block;
+  margin-left: 0.4rem;
+  color: hsla(0, 0%, 48%, 0.902);
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+#memo {
+  color: hsl(39, 100%, 56%);
+  font-weight: 500;
+  margin-left: 0.3rem;
+  vertical-align: middle;
+}
+#visual {
+  color: hsl(234, 85%, 45%);
+  font-weight: 500;
+  margin-left: 0.3rem;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+#verbal {
+  color: hsl(166, 100%, 37%);
+  font-weight: 500;
+  margin-left: 0.3rem;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+
+.foot {
+  text-align: center;
+  width: 100%;
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 2rem;
+  padding: 0.7rem;
+  font-size: 1rem;
+  margin-top: 1.9rem;
+  color: white;
+  font-weight: 500;
+}
+
+.foot:active {
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%),
+    hsl(241, 81%, 54%)
+  );
+}
+
+.red {
+  background-color: hsla(0, 100%, 67%, 0.06);
+}
+
+.yel {
+  background-color: hsla(39, 100%, 56%, 0.06);
+}
+
+.gre {
+  background-color: hsl(166, 100%, 37%, 0.06);
+}
+
+.blu {
+  background-color: hsl(234, 85%, 45%, 0.06);
+}
+
+@media (max-width: 440px) {
+  .card {
+    flex-direction: column;
+    border-radius: 0px;
+    height: 100%;
+    width: 100%;
+    font-size: 1.3rem;
+  }
+
+  .card1 {
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    height: 45%;
+    width: 100%;
+  }
+}
