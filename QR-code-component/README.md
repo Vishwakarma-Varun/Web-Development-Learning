@@ -8,7 +8,7 @@ A responsive QR Code Component built using **HTML** and **CSS** as part of the F
 
 ## 🔗 Live Demo
 
-- Live Site: https://vishwakarma-varun.github.io/QR-code-component/
+- Live Site: https://vishwakarma-varun.github.io/Web-Development-Learning/QR-code-component/
 
 ## 🚀 Built With
 
