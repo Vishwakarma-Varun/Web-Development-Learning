@@ -52,9 +52,22 @@ nav {
   align-items: center;
   gap: 0.3rem;
 }
+
 .ham {
-  color: hsl(224, 100%, 95%);
-  font-size: 2rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.ham span {
+    width: 1.25rem;
+    height: 0.125rem;
+    background-color: white;
+    transition: 0.3s ease;
 }
 
 .dot {
@@ -68,20 +81,24 @@ a {
 .nav-hid {
   position: absolute;
   background-color: hsl(228, 99%, 58%);
-  top: 3.75rem;
+  top: 3.875rem;
   right: 0;
-  height: calc(100vh - 3.75rem);
+  height: calc(100vh - 3.875rem);
   display: none;
+  width: 25%;
 }
 
 #menu-toggle:checked ~ .nav-hid {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: end;
+  padding: 2.5rem;
+  gap: 1.25rem;
+  font-size: 1.563rem;
 }
 
 .right-contain {
-  width: 70%;
+  width: 50%;
   height: 100%;
   background-color: hsl(228, 99%, 58%);
   display: flex;
@@ -92,7 +109,7 @@ a {
   border-right: 2px solid hsl(220, 100%, 64%);
 }
 
-p {
+.big-box p {
   color: hsla(224, 100%, 95%, 0.708);
 }
 
@@ -104,13 +121,14 @@ p {
 }
 
 .big-box {
-  max-width: 76%;
+  max-width: 60%;
 }
 
 .left-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: hsl(228, 99%, 58%);
+  width: 50%;
 }
 
 .box1 {
@@ -135,5 +153,51 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px;
+  padding: 1.25rem;
+}
+
+.icons{
+  width: 1.563rem;
+}
+
+.box-top div{
+  font-size: 1.875rem;
+}
+
+.box-bottom p{
+  color: hsla(224, 100%, 95%, 0.708);
+  font-size: 11px;
+  margin-top: 0.313rem;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.box:hover{
+  background-color: hsl(228, 100%, 60%);
+  cursor: pointer;
+}
+
+.overlay{
+  position: absolute;
+  left: 0;
+  width: 75%;
+  background-color: hsla(0, 0%, 0%, 0.395);
+  height: calc(100vh - 3.875rem);
+  top: 3.875rem;
+  display: none;
+  
+}
+
+#menu-toggle:checked ~ .overlay{
+  display: block;
+}
+
+#menu-toggle:checked ~ .ham span:first-child {
+    transform: translateY(4px) rotate(45deg);
+}
+
+#menu-toggle:checked ~ .ham span:last-child {
+    transform: translateY(-4px) rotate(-45deg);
 }
