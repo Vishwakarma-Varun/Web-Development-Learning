@@ -5,7 +5,8 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
+  position: relative;
   display: flex;
   flex-direction: column;
   font-family: "Inter", sans-serif;
@@ -54,20 +55,20 @@ nav {
 }
 
 .ham {
-    width: 1.25rem;
-    height: 1.25rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 6px;
-    cursor: pointer;
+  width: 1.25rem;
+  height: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 6px;
+  cursor: pointer;
 }
 
 .ham span {
-    width: 1.25rem;
-    height: 0.125rem;
-    background-color: white;
-    transition: 0.3s ease;
+  width: 1.25rem;
+  height: 0.125rem;
+  background-color: white;
+  transition: 0.3s ease;
 }
 
 .dot {
@@ -98,8 +99,6 @@ a {
 }
 
 .right-contain {
-  width: 50%;
-  height: 100%;
   background-color: hsl(228, 99%, 58%);
   display: flex;
   flex-direction: column;
@@ -107,6 +106,7 @@ a {
   gap: 1.563rem;
   padding: 1.875rem;
   border-right: 2px solid hsl(220, 100%, 64%);
+  width: 100%;
 }
 
 .big-box p {
@@ -126,9 +126,9 @@ a {
 
 .left-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   background-color: hsl(228, 99%, 58%);
-  width: 50%;
+  width: 100%;
 }
 
 .box1 {
@@ -156,30 +156,30 @@ a {
   padding: 1.25rem;
 }
 
-.icons{
+.icons {
   width: 1.563rem;
 }
 
-.box-top div{
+.box-top div {
   font-size: 1.875rem;
 }
 
-.box-bottom p{
+.box-bottom p {
   color: hsla(224, 100%, 95%, 0.708);
   font-size: 11px;
   margin-top: 0.313rem;
 }
 
-a:hover{
+a:hover {
   text-decoration: underline;
 }
 
-.box:hover{
+.box:hover {
   background-color: hsl(228, 100%, 60%);
   cursor: pointer;
 }
 
-.overlay{
+.overlay {
   position: absolute;
   left: 0;
   width: 75%;
@@ -187,17 +187,62 @@ a:hover{
   height: calc(100vh - 3.875rem);
   top: 3.875rem;
   display: none;
-  
 }
 
-#menu-toggle:checked ~ .overlay{
+body:has(#menu-toggle:checked) .overlay {
   display: block;
 }
 
 #menu-toggle:checked ~ .ham span:first-child {
-    transform: translateY(4px) rotate(45deg);
+  transform: translateY(4px) rotate(45deg);
 }
 
 #menu-toggle:checked ~ .ham span:last-child {
-    transform: translateY(-4px) rotate(-45deg);
+  transform: translateY(-4px) rotate(-45deg);
+}
+
+@media (max-width: 600px) {
+  main {
+    flex-direction: column;
+  }
+
+  .right-contain {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid hsl(220, 100%, 64%);
+    height: 300px;
+  }
+  .left-container {
+    grid-template-columns: 1fr;
+  }
+
+  .big-box {
+    max-width: none;
+    width: 100%;
+  }
+  .box {
+    border: none;
+    border-bottom: 2px solid hsl(220, 100%, 64%);
+    height: 300px;
+  }
+
+  .box4 {
+    border: none;
+  }
+
+  .overlay {
+    top: 22.625rem;
+    width: 100%;
+    bottom: 0;
+    height: calc(100% - 22.625rem);
+  }
+
+  .nav-hid {
+    top: 3.875rem;
+    width: 100%;
+    height: 300px;
+  }
+  #menu-toggle:checked ~ .nav-hid {
+    align-items: center;
+  }
 }
