@@ -52,10 +52,10 @@ My goal is to gradually move from basic frontend concepts to building complete, 
 - [x] CSS Fundamentals
 - [x] Responsive Design
 - [x] Flexbox
-- [ ] CSS Grid
-- [ ] Advanced CSS
-- [ ] JavaScript Fundamentals
-- [ ] DOM Manipulation
+- [x] CSS Grid
+- [x] Advanced CSS
+- [x] JavaScript Fundamentals
+- [x] DOM Manipulation
 - [ ] APIs
 - [ ] React.js
 
