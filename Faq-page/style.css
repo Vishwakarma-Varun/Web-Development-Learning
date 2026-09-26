@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(275, 100%, 97%);
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.head {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+span img {
+  height: 23px;
+}
+
+.card {
+  padding-top: 35px;
+  width: 540px;
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  background-color: white;
+  padding: 25px;
+  border-radius: 10px;
+  font-family: "Work Sans", sans-serif;
+  color: hsl(292, 42%, 14%);
+}
+
+.ans {
+  display: none;
+}
+
+.questions {
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+
+.plus_icon img{
+    height: 20px;
+}
+
+.last{
+    font-size: 10px;
+    font-weight: 700;
+}
+
